@@ -1,0 +1,56 @@
+https://academy.patika.dev/courses/veri-yapilari-ve-algoritmalar/insertion-sort-proje
+
+Proje 1: Insertion Sort Aşamaları
+Verilen dizi:
+[22, 27, 16, 2, 18, 6]
+
+Başlangıç: [22, 27, 16, 2, 18, 6]
+İlk eleman 22'dir, bu zaten sıralı kabul edilir.
+
+Adım 1 (2. eleman - 27):
+27 zaten 22'den büyük olduğu için herhangi bir değişiklik yapılmaz.
+[22, 27, 16, 2, 18, 6]
+
+Adım 2 (3. eleman - 16):
+16, 27'den küçük olduğu için 16, 27'nin yerine gelir, ardından 16, 22'den de küçük olduğu için 16, 22'nin yerine gelir.
+[16, 22, 27, 2, 18, 6]
+
+Adım 3 (4. eleman - 2):
+2, 27'den, 22'den ve 16'dan küçüktür, bu yüzden 2 dizinin en başına gelir.
+[2, 16, 22, 27, 18, 6]
+
+Adım 4 (5. eleman - 18):
+18, 27'den küçük olduğu için 18, 27'nin yerine gelir. Ardından 18, 22'den de küçük olduğu için 18, 22'nin yerine gelir.
+[2, 16, 18, 22, 27, 6]
+
+Adım 5 (6. eleman - 6):
+6, 27'den, 22'den, 18'den ve 16'dan küçük olduğu için 6, dizinin başına yerleşir.
+[2, 6, 16, 18, 22, 27]
+
+Big-O gösterimi:
+
+Insertion Sort'un zaman karmaşıklığı O(n²)'dir. En kötü durumda (worst case), her eleman her zaman diğer elemanlarla karşılaştırılır.
+Time Complexity için 18 sayısı:
+
+Average case: 18, sıralı dizide ortada yer alan bir sayı olabilir.
+Worst case: 18, dizinin sonuna yakın bir konumda yer alabilir.
+Best case: 18, dizinin en başında olabilir.
+Selection Sort Aşamaları (7,3,5,8,2,9,4,15,6)
+Verilen dizi:
+[7, 3, 5, 8, 2, 9, 4, 15, 6]
+
+Adım 1:
+Dizinin tamamında en küçük elemanı bulmalıyız (bu durumda 2). 2 ile 7'yi takas ederiz.
+[2, 3, 5, 8, 7, 9, 4, 15, 6]
+
+Adım 2:
+Kalan dizinin en küçük elemanı 3'tür, dolayısıyla değişiklik yapılmaz.
+[2, 3, 5, 8, 7, 9, 4, 15, 6]
+
+Adım 3:
+Kalan dizinin en küçük elemanı 4'tür, bu yüzden 5 ile 4'ü takas ederiz.
+[2, 3, 4, 8, 7, 9, 5, 15, 6]
+
+Adım 4:
+Kalan dizinin en küçük elemanı 5'tir, bu yüzden 8 ile 5'i takas ederiz.
+[2, 3, 4, 5, 7, 9, 8, 15, 6]
