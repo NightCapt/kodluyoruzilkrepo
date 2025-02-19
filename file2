@@ -1,0 +1,55 @@
+Proje 2: Merge Sort Aşamaları
+Verilen dizi:
+[16, 21, 11, 8, 12, 22]
+
+Merge Sort, "Divide and Conquer" (Böl ve Yönet) yaklaşımına dayanır. Dizi önce parçalara ayrılır, ardından her parça sıralanarak birleştirilir.
+
+Başlangıç: [16, 21, 11, 8, 12, 22]
+Dizi ortadan ikiye bölünür:
+
+Sol parça: [16, 21, 11]
+Sağ parça: [8, 12, 22]
+Sol parça üzerinde işlem (Bölme):
+Sol parça [16, 21, 11] yine ikiye bölünür:
+
+Sol parça: [16]
+Sağ parça: [21, 11]
+21 ve 11'lik sağ parça da ikiye bölünür:
+Sol parça: [21]
+Sağ parça: [11]
+Sağ parça üzerinde işlem (Bölme):
+Sağ parça [8, 12, 22] ikiye bölünür:
+
+Sol parça: [8]
+Sağ parça: [12, 22]
+12 ve 22'lik sağ parça da ikiye bölünür:
+Sol parça: [12]
+Sağ parça: [22]
+Birleştirme (Merge):
+
+Şimdi bölünen dizileri sıralı şekilde birleştiriyoruz:
+
+[21] ve [11] sıralanır: [11, 21]
+
+[16] ile [11, 21] birleştirilir: [11, 16, 21]
+
+[12] ve [22] sıralanır: [12, 22]
+
+[8] ile [12, 22] birleştirilir: [8, 12, 22]
+
+Son Birleştirme:
+
+[11, 16, 21] ile [8, 12, 22] birleştirilir:
+Sonuç: [8, 11, 12, 16, 21, 22]
+Big-O Gösterimi:
+
+Merge Sort'un zaman karmaşıklığı O(n log n)'dir.
+n dizinin eleman sayısını temsil eder,
+log n ise bölme işlemleri sırasında her bir bölünme adımının derinliğini ifade eder.
+Merge Sort her bölünme adımında diziyi ikiye böler, ve her bir birleşim adımında tüm elemanlar bir kez işlenir.
+Time Complexity:
+
+Worst Case: O(n log n)
+Best Case: O(n log n)
+Average Case: O(n log n)
+Merge Sort, her durumda (en iyi, en kötü, ortalama) O(n log n) karmaşıklığına sahiptir, çünkü her seferinde diziyi ikiye bölüp sıralama yapar.
